@@ -1,0 +1,47 @@
+*,*:before,*:after{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 21cm;
+    max-height: 29.7cm;
+    margin: auto;
+
+    background: pink;
+    display: grid;
+
+        /*split the container into 2 columns
+        auto - as wide as the content
+        1fr - fill remaining space*/
+    grid-template-columns: auto 1fr;
+  }
+
+  
+  .side{
+    background:#1b1b32;
+    display: grid;
+    align-content: flex-start;
+    grid-gap: 10px;
+  }
+
+  .main{
+    background: #3b3b4f;
+    display: grid;
+    align-content: flex-start;
+    grid-gap: 10px;
+  }
+
+  .card{
+    background:PaleGreen;
+    border: 1px solid black;
+    margin-left: 1rem;
+    display: grid;
+
+        /*place eleements to bottom of cell*/
+    align-items: end; 
+  }
+
+  .name{
+    background:PaleTurquoise;
+  }
