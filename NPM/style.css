@@ -1,0 +1,33 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    width: fit-content;
+    border-right: 2px solid whitesmoke;
+    border-bottom: 2px solid whitesmoke;
+    padding: 0rem 2rem 0.5rem 0rem;
+    /* margin-left: 3rem; */
+    /* color: rgb(5, 90, 90); */
+    border-bottom-right-radius: 5rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+    background-color: rgb(5, 90, 90);
+    color: whitesmoke;
+    padding: 2rem;
+    border-radius: 5rem;
+}
+
+.link {
+    text-decoration: none;
+    color: yellowgreen;
+}
+
+.command {
+    color: aqua;
+}
