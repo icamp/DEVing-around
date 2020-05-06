@@ -1,0 +1,30 @@
+:root {
+    --yellow: #ffc600;
+    --yellow-transparent: rgb(255, 198, 0, 0.8);
+    --black: #272727;
+    --black-trasparent: rgb(39, 39, 39, 0.9);
+}
+
+*,*:before,*:after{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-image: url(brickWall2.jpg);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.fog {
+    background: black;
+    padding: 50px;
+    color: whitesmoke;
+    filter: blur(1px);
+    width: max-content;
+    margin: auto;
+    letter-spacing: 5px;
+    border-top-right-radius: 50px;
+}
