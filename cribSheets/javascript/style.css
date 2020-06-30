@@ -1,0 +1,19 @@
+
+.page {
+      background-color: rgba(255, 255, 255, 0.05);
+      margin: auto;
+      width: 80vw;
+      padding: 50px;
+      margin-top: 50px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+}
+
+.method {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 10px;
+      border-radius: 10px;
+}
