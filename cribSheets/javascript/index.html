@@ -8,12 +8,15 @@
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="../style.css">
 
-      <title>cribSheet | array methods</title>
+      <title>dev notes | javascript</title>
 </head>
 <body>
 
       <div class="page">
-            <h1>Javascript Array Methods</h1>
+            <a href="../index.html">Home</a>
+            
+            <h1>Javascript</h1>
+            <h1>Array Methods</h1>
 
             <div class="method">
                   <p>const items = [</p>
@@ -69,6 +72,30 @@
                   const items = [0, 1, 2, 3, 4, 5]    <br>
                   const includesTwo = items.includes(2)
             </p>
+
+            <br><h1>Destructuring</h1>
+
+            <p>The idea of destructuring is to take an object or an array and and break it down into smaller objects, elements or smaller variables.</p>
+            <p>const alphabet = [ 'A', 'B', 'C', 'D', 'E', 'F' ]</p>
+            <p>const numbers = [ '1', '2', '3', '4', '5', '6' ]</p>
+
+            <p>Ex: get the first 2 elements in the 'alphabet' array: <br>
+            const [first, second] = alphabet;<br>
+            console.log(first) will return A which is the first item in the array</p>
+
+            <p>Skipping an element in the array is done using a comma (,) <br>
+            Ex: const [one,, two] = alphabet; <br>
+            console.log(two) returns 'C' since 'B' is skipped by the double ,,</p>
+
+            <p>To get the rest of the elements in the array, the spreak operator ( ... ) can be used: <br>
+                  const [one,, two, ...rest] = alphabet; <br>
+                  console.log(rest) returns ["D", "E", "F"]</p>
+
+            <p>With destructuring and spread it is possible to combine 2 arrays together: <br>
+            const combinedArray = [...alphabet, ...numbers]</p>
+
+            
+
       </div>
 
       
