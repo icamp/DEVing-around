@@ -51,33 +51,45 @@ body {
       /* border: 1px solid red; */
 
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-template-rows: auto;
+      grid-gap: 15px;
       grid-template-areas: 
-            "header header header header header  "
-            ".      .      .      .      .       "
-            ".      main   .      main   .       "
-            ".      main   .      main   .       "
-            ".      .      .      .      .       "
-            "footer footer footer footer  footer ";
+            "header     header      header      header      header      header"
+            ".          .           .          .            .           .     "
+            ".          main        main        main        main        .     "
+            ".          main        main        main        main        .     "
+            ".          .           .           .           .           .     "
+            "footer     footer      footer      footer      footer      footer";
 }
 
 .header {
       grid-area: header;
-      width: 100%;
-      max-width: max-content;
-      height: 100%;
-      max-height: min-content;
       background-color: yellowgreen;
 
-      justify-content: center;
-      align-items: center;
-      align-content: center;
+      /* justify-items: center;
+      align-items: center; */
+
+      place-items: center;
+
+      /* justify-content: center;
+      align-content: center; */
+
+      place-content: center;
+}
+
+h1 {
+      width: 100%;
+      max-width: max-content;
+      height: max-content;
+      border: 3px dotted red;
+      margin: auto;
 }
 
 .content {
       background-color: var(--color2);
 }
+
 /*
 
 .linx a {
