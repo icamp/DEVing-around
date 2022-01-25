@@ -52,7 +52,7 @@ body {
   grid-template-rows: auto;
   grid-gap: 25px;
   grid-template-areas:
-    /* ".          .           .          .            .           .     " */
+    ".          .           .          .            .           home  "
     "header     header      header      header      header      header"
     ".          main        main        main        main        .     "
     ".          main        main        main        main        .     "
