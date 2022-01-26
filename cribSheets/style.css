@@ -51,13 +51,13 @@ body {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
   grid-gap: 25px;
-  grid-template-areas:
+  /* grid-template-areas:
     ".          .           .          .            .           home  "
     "header     header      header      header      header      header"
     ".          main        main        main        main        .     "
     ".          main        main        main        main        .     "
     ".          .           .           .           .           .     "
-    "footer     footer      footer      footer      footer      footer";
+    "footer     footer      footer      footer      footer      footer"; */
     place-items: center;
 }
 
