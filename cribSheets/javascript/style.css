@@ -24,3 +24,36 @@
       
       box-shadow: 1px 1px 5px wheat;
 } */
+
+.main {
+  grid-column: 1 / -1;
+  grid-row: 4 / auto;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  gap: 50px;
+  max-width: 90vw;
+  padding: 50px;
+}
+
+h2 {
+  grid-column: 1 / -1;
+  grid-row: auto;
+  height: 50px;
+  width: 100%;
+}
+
+.card {
+  grid-column: auto / span 3;
+  grid-row: auto / span 2;
+
+  background-color: var(--color2);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card-big {
+  grid-column: 1 / -1;
+  grid-row: auto;
+}

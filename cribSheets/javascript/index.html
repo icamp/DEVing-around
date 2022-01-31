@@ -16,18 +16,17 @@
   <div class="container">
 
     <div class="header">
-      <a class="home" href="../index.html">Home</a>
+      <div class="nav-btns">
+        <a class="low-btn" href="Javascript_Cheatsheet_Zero_To_Mastery_V4.2.pdf">Cheatsheet by ZTM</a>
+        <a class="home low-btn" href="../index.html">Home</a>
+      </div>
       <h1>Javascript</h1>
     </div>
 
     <div class="main">
+      <h1 class="card-big">Array Methods</h1>
 
-      <h2>JS Cheatsheet by ZTM</h2>
-      <a href="Javascript_Cheatsheet_Zero_To_Mastery_V4.2.pdf">Open PDF</a>
-
-      <h2>Array Methods</h2>
-
-      <div class="method">
+      <div class="card">
         <p>const items = [</p>
         <ul>
           <li>{ name: 'Bike', price: 100 },</li>
@@ -41,68 +40,97 @@
         <p>]</p>
       </div>
 
-      <h3 class="subtitle">filter() </h3>
-      <p class="method">const filteredItems = items.filter((item) => { <br>
-        return item.price <= 100 <br>
+      <div class="card">
+        <h3 class="subtitle">filter() </h3>
+        <p class="method">const filteredItems = items.filter((item) => { <br>
+          return item.price &#60;= 100 <br>
           })</p>
+      </div>
 
-      <h3 class="subtitle">map() </h3>
-      <p class="method">const itemNames = items.map((item) => {
-        return item.name
-        })</p>
+      <div class="card">
+        <h3 class="subtitle">map() </h3>
+        <p class="method">const itemNames = items.map((item) => {
+          return item.name
+          })</p>
+      </div>
 
-      <h3 class="subtitle">find() </h3>
-      <p class="method">const foundItem = items.find((item) => {
-        return item.name === 'Book'
-        })</p>
+      <div class="card">
+        <h3 class="subtitle">find() </h3>
+        <p class="method">const foundItem = items.find((item) => {
+          return item.name === 'Book'
+          })</p>
+      </div>
 
-      <h3 class="subtitle">forEach() </h3>
-      <p class="method">items.forEach((item) => {
-        console.log(item.name)
-        })</p>
+      <div class="card">
+        <h3 class="subtitle">forEach() </h3>
+        <p class="method">items.forEach((item) => {
+          console.log(item.name)
+          })</p>
+      </div>
 
-      <h3 class="subtitle">some() </h3>
-      <p class="method">const hasInexpensiveItems = items.some((item) => {
-        return item.price <= 100 })</p> <h3 class="subtitle">every() </h3>
-          <p class="method">const hasEveryItem = items.every((item) => {
-            return item.price <= 100 })</p> <h3 class="subtitle">reduce()</h3>
-              <p class="method">const totalPrice = items.reduce((currentTotal, item) => {
-                return item.price + currentTotal
-                }, 0)</p>
+      <div class="card">
+        <h3 class="subtitle">some() </h3>
+        <p class="method">const hasInexpensiveItems = items.some((item) => {
+          return item.price &#60;= 100 })</p>
+      </div>
 
-              <h3 class="subtitle">includes()</h3>
-              <p class="method">
-                const items = [0, 1, 2, 3, 4, 5] <br>
-                const includesTwo = items.includes(2)
-              </p>
+      <div class="card">
+        <h3 class="subtitle">every() </h3>
+        <p class="method">const hasEveryItem = items.every((item) => {
+          return item.price &#60;= 100 })</p>
+      </div>
 
-              <br>
-              <h1>Destructuring</h1>
+      <div class="card">
+        <h3 class="subtitle">reduce()</h3>
+        <p class="method">const totalPrice = items.reduce((currentTotal, item) => {
+          return item.price + currentTotal
+          }, 0)</p>
+      </div>
 
-              <p>The idea of destructuring is to take an object or an array and and break it
-                down
-                into smaller objects, elements or smaller variables.</p>
-              <p>const alphabet = [ 'A', 'B', 'C', 'D', 'E', 'F' ]</p>
-              <p>const numbers = [ '1', '2', '3', '4', '5', '6' ]</p>
+      <div class="card">
+        <h3 class="subtitle">includes()</h3>
+        <p class="method">
+          const items = [0, 1, 2, 3, 4, 5] <br>
+          const includesTwo = items.includes(2)
+        </p>
+      </div>
 
-              <p>Ex: get the first 2 elements in the 'alphabet' array: <br>
-                const [first, second] = alphabet;<br>
-                console.log(first) will return A which is the first item in the array
-              </p>
+      <h1 class="card-big">Destructuring</h1>
 
-              <p>Skipping an element in the array is done using a comma (,) <br>
-                Ex: const [one,, two] = alphabet; <br>
-                console.log(two) returns 'C' since 'B' is skipped by the double ,,</p>
+      <div class="card card-big">
+        <p>The idea of destructuring is to take an object or an array and and break it
+          down
+          into smaller objects, elements or smaller variables.</p>
+        <p>const alphabet = [ 'A', 'B', 'C', 'D', 'E', 'F' ]</p>
+        <p>const numbers = [ '1', '2', '3', '4', '5', '6' ]</p>
+        <!-- </div> -->
 
-              <p>To get the rest of the elements in the array, the spreak operator ( ... )
-                can be
-                used: <br>
-                const [one,, two, ...rest] = alphabet; <br>
-                console.log(rest) returns ["D", "E", "F"]</p>
+        <!-- <div class="card"> -->
+        <p>Ex: get the first 2 elements in the 'alphabet' array: <br>
+          const [first, second] = alphabet;<br>
+          console.log(first) will return A which is the first item in the array
+        </p>
+        <!-- </div> -->
 
-              <p>With destructuring and spread it is possible to combine 2 arrays together:
-                <br>
-                const combinedArray = [...alphabet, ...numbers]</p>
+        <!-- <div class="card"> -->
+        <p>Skipping an element in the array is done using a comma (,) <br>
+          Ex: const [one,, two] = alphabet; <br>
+          console.log(two) returns 'C' since 'B' is skipped by the double ,,</p>
+        <!-- </div> -->
+
+        <!-- <div class="card"> -->
+        <p>To get the rest of the elements in the array, the spreak operator ( ... )
+          can be
+          used: <br>
+          const [one,, two, ...rest] = alphabet; <br>
+          console.log(rest) returns ["D", "E", "F"]</p>
+        <!-- </div> -->
+
+        <!-- <div class="card"> -->
+        <p>With destructuring and spread it is possible to combine 2 arrays together:
+          <br>
+          const combinedArray = [...alphabet, ...numbers]</p>
+      </div>
     </div>
 
     <div class="footer">
