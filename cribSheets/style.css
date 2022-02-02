@@ -5,6 +5,7 @@
   --color1: #050d21;
   --color2: rgba(255, 255, 255, 0.05);
   --color3: #1abc9c;
+  --wesBos: #ffc600;
 }
 
 /*//////////////////
@@ -185,18 +186,22 @@ h1 {
   }
 }
 
-/*
-CAPSULE
+/* CAPSULE */
 
 .elinx {
-      color: snow;
+  color: snow;
 }
 
-.highlight, tr:nth-child(even) {
-      background-color: rgba(255, 255, 255, 0.1);
+.highlight,
+tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 .emphasize {
-      color: gold;
+  color: var(--wesBos);
+  padding: 10px;
+  /* display: block; */
 }
-*/
