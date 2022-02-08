@@ -4,100 +4,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <link rel="stylesheet" href="../javascript/style.css">
     <link rel="stylesheet" href="../style.css">
 
-    <title>dev notes | git</title>
+    <title>synopsis | git</title>
 </head>
 
 <body>
-      <div class="content">
-        <a href="../index.html">Home</a>
-        <h1>Git commandments</h1>
-        <h2> <a href="git_cheatsheet.pdf">Cheatsheet by Atlassian</a> </h2>
-        <h4>A quick guide to using git & github</h4>
-        <ol>
-            <li>install Git</li>
-                <ul>
-                    <li><a class="elinx" href="http://https://git-scm.com/downloads">download from here</a></li>
-                </ul>
-            <li> user configuration (run commands in Git Bash):</li>
-                <ul>
-                    <li><em class="highlight emphasize">git config --global user.name</em> to see configured user</li>
-                    <li><em class="highlight emphasize">git config --global user.email</em> to see user email</li>
-                    <li><em class="highlight emphasize">git config --global user.name <i class="emphasize">your_name</i></em> to set/update user name</li>
-                    <li><em class="highlight emphasize">git config --global user.email <i class="emphasize">your_email</i></em> to set/update user email</li>
-                </ul>
-            <li>create a local git repository:</li>
-                <ul>
-                    <li>open or navigate power shell/terminal to projects folder and run the commands:</li>
-                    <li><em class="highlight emphasize">git init</em> initialises folder as repository</li>
-                    <li><em class="highlight emphasize">git status</em> displays status for current repo</li>
-                    <li><em class="highlight emphasize">git add "filename"</em> or <em class="highlight emphasize">git add .</em> to add all untracked files</li>
-                    <li><em class="highlight emphasize">git commit -m "message"</em> (to commit the saved changes with a descriptive -m message)</li>
-                </ul>
-            <li>copy repository online:</li>
+    <div class="container">
+
+        <header class="header">
+            <div class="nav-btns">
+                <a href="../index.html">Home</a>
+            </div>
+            <h1>Git commandments</h1>
+        </header>
+
+        <div class="main">
+
+            <h2 class="card-big"> <a href="git_cheatsheet.pdf">Cheatsheet by Atlassian</a> </h2>
+
+            <h4 class="card-big">A quick guide to using git & github</h4>
+
+            <div class="card">
+                <h4>install Git</h4>
+                <a class="elinx" href="http://https://git-scm.com/downloads">download git</a>
+            </div>
+
+            <div class="card">
+                <h4> user configuration (run commands in Git Bash):</h4>
+                <p><em class="highlight emphasize">git config --global user.name</em> to see configured user</p>
+                <p><em class="highlight emphasize">git config --global user.email</em> to see user email</p>
+                <p><em class="highlight emphasize">git config --global user.name <i class="emphasize">your_name</i></em>
+                    to set/update user name</p>
+                <p><em class="highlight emphasize">git config --global user.email <i
+                            class="emphasize">your_email</i></em> to set/update user email</p>
+            </div>
+
+            <div class="card">
+                <h4>create a local git repository:</h4>
+                <li>open or navigate power shell/terminal to projects folder and run the commands:</li>
+                <li><em class="highlight emphasize">git init</em> initialises folder as repository</li>
+                <li><em class="highlight emphasize">git status</em> displays status for current repo</li>
+                <li><em class="highlight emphasize">git add "filename"</em> or <em class="highlight emphasize">git
+                        add .</em> to add all untracked files</li>
+                <li><em class="highlight emphasize">git commit -m "message"</em> (to commit the saved changes with a
+                    descriptive -m message)</li>
+            </div>
+
+            <div class="card">
+                <li>copy repository online:</li>
                 <ul>
                     <li>go to github.com > repositories > new</li>
                     <li>name it same as the project folder</li>
-                    <li>run commands shown under this line: <br> <i>"...or push an existing repository from the command line" </i><br> (type them if copy/pasta erros out) </li>
+                    <li>run commands shown under this line: <br> <i>"...or push an existing repository from the command
+                            line" </i><br> (type them if copy/pasta erros out) </li>
                     <li>if it fucked up, delete the .git folder from the projects folder and restart at step 3</li>
                     <li>projects should now be visible on github.com account</li>
                 </ul>
-            <li>download repository from github to a projects folder:</li>
+            </div>
+
+            <div class="card">
+                <li>download repository from github to a projects folder:</li>
                 <ul>
-                    <li>run terminal in the folder where the new projects will be stored <br> (preferably a new folder)</li>
-                    <li><em class="highlight emphasize">git clone >link of github repo, ending in .git<</em></li> 
-                </ul> 
-            <li>add new changes to github:</li>
-                <ul>
-                    <li><em class="highlight emphasize">git status</em></li>
-                    <li><em class="highlight emphasize">git add .</em></li>
-                    <li><em class="highlight emphasize">git commit -m "message to git log about the changes made in code"</em></li>
-                    <li><em class="highlight emphasize">git push</em> will save the stuff to github</li>
-                </ul>
-            <li>download code updates or changes from github:</li>
+                    <li>run terminal in the folder where the new projects will be stored <br> (preferably a new folder)
+                    </li>
+                    <li><em class="highlight emphasize">git clone >link of github repo, ending in .git<</em> </li> </ul>
+                                </div> <div class="card">
+                    <li>add new changes to github:</li>
+                    <ul>
+                        <li><em class="highlight emphasize">git status</em></li>
+                        <li><em class="highlight emphasize">git add .</em></li>
+                        <li><em class="highlight emphasize">git commit -m "message to git log about the changes made in
+                                code"</em></li>
+                        <li><em class="highlight emphasize">git push</em> will save the stuff to github</li>
+                    </ul>
+            </div>
+
+            <div class="card">
+                <li>download code updates or changes from github:</li>
                 <ul>
                     <li><em class="highlight emphasize">git pull</em></li>
                 </ul>
-            <li>to cancel any local changes made since last commit:</li>
+            </div>
+
+            <div class="card">
+                <li>to cancel any local changes made since last commit:</li>
                 <ul>
                     <li><em class="highlight emphasize">git checkout . </em>(notice the space and the period)</li>
                 </ul>
-            <li>merging</li>
+            </div>
+
+            <div class="card">
+                <li>merging</li>
                 <ul>
                     <li>to pull & merge, and overwrite any local code differences:</li>
                     <li><em class="highlight emphasize">git merge --strategy-options theirs</em></li>
                     <li>to pull & merge the code from github but use the local code if there are differences:</li>
                     <li><em class="highlight emphasize">git merge --strategy-option ours</em></li>
                 </ul>
-            <li>branching</li>
-                <ul>
-                    <li><em class="highlight emphasize">git branch</em> shows current branch, marked with an *</li>
-                    <li><em class="highlight emphasize">git branch >name<</em> creates a new branch with selected name</li>
-                    <li><em class="highlight emphasize">git checkout >name<</em> switches to the new branch</li>
-                    <li><em class="highlight emphasize">git checkout -b >name<</em> creates and switch to a new branch in one step</li>
-                    <li><em class="highlight emphasize">git push origin >name<</em> pushes new branch to github</li>
-                </ul>
-            <li>managing branches</li>
-                <ul>
-                    <li><em class="highlight emphasize">Compare & pull request</em> option will appear on github's project page after pushing code to a branch</li>
-                    <li>clicking the button will display changes <br> & a text box to describe the new code along with a new button: <br><em class="highlight emphasize">Create pull request</em> </li>
-                    <li>after creating the pull request a new option becomes available: <br><em class="highlight emphasize">Merge pull request</em></li>
+            </div>
+
+            <li class="card-big">branching</li>
+
+
+
+            <div class="card">
+                <li><em class="highlight emphasize">git branch</em> shows current branch, marked with an *</li>
+            </div>
+
+            <div class="card">
+                <li><em class="highlight emphasize">git branch >name<</em> creates a new branch with selected name</li>
+                            </div> <div class="card">
+                <li><em class="highlight emphasize">git checkout >name<</em> switches to the new branch</li> </div> <div
+                            class="card">
+                <li><em class="highlight emphasize">git checkout -b
+                        >name<</em> creates and switch to a new branch in one step</li> </div> <div class="card">
+                <li><em class="highlight emphasize">git push origin >name<</em> pushes new branch to github</li> </div>
+                            <li class="card-big">managing branches</li>
+
+
+
+                <div class="card">
+                    <li><em class="highlight emphasize">Compare & pull request</em> option will appear on
+                        github's project page after pushing code to a branch</li>
+                </div>
+
+                <div class="card">
+                    <li>clicking the button will display changes <br> & a text box to describe the new code
+                        along with a new button: <br><em class="highlight emphasize">Create pull request</em>
+                    </li>
+                </div>
+
+
+
+                <div class="card">
+                    <li>after creating the pull request a new option becomes available: <br><em
+                            class="highlight emphasize">Merge pull request</em></li>
+                </div>
+
+
+                <div class="card">
                     <li>from there it gets analized/compared by someone else in the team</li>
-                    <li>tbd <em class="highlight emphasize">git conflicts</em></li>
-                </ul>
-                <li>other git commands</li>
-                <ul>
-                    <li><em class="highlight emphasize">git diff</em> to see any changes made since last commit</li>
+                </div>
+
+
+
+                <h1>tbc <em class="highlight emphasize">git conflicts</em></h1>
+
+
+
+
+
+
+
+
+                <h1 class="card-big">other git commands</h1>
+
+
+                <div class="card">
+                    <li><em class="highlight emphasize">git diff</em> to see any changes made since last commit
+                    </li>
+                </div>
+
+                <div class="card">
                     <li>tbd <em class="highlight emphasize">git checkout --track origin/'branchName'</em> </li>
+                </div>
+
+                <div class="card">
                     <li>tbd <em class="highlight emphasize">git branch -a</em> </li>
-                    <li>tbd <em class="highlight emphasize">git checkout -b 'branchName(including any path like "feature/")' origin/'branchName'</em></li>
-                </ul>
-        </ol>
-    </div>
+                </div>
+
+                <div class="card">
+                    <li>tbd <em class="highlight emphasize">git checkout -b 'branchName(including any path like
+                            "feature/")' origin/'branchName'</em></li>
+                </div>
+
+            </div>
+        </div>
 </body>
 
 </html>
-
