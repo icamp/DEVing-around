@@ -45,7 +45,7 @@ h2 {
 }
 
 .card {
-  grid-column: auto / span 3;
+  grid-column: auto / span 6;
   grid-row: auto / span 2;
 
   background-color: var(--color2);
