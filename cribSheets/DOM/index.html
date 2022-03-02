@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
   <div class="container">
 
     <div class="header">
@@ -23,108 +24,176 @@
 
     <div class="main">
 
-      <h1 class='card-big'>Reaching Elements in a Document</h1>
+      <h3 class='card-big'>Reaching Elements in a Document</h3>
+
       <div class="card">
-        <p><span class="emphasize">document.getElementById('id')</span> retrieves the element with the
-          given
-          <em>id</em> as an object</p>
-        <p><span class="emphasize">document.getElementsByTagName('tagname')</span> retrieves all
-          elements with
-          the
-          tag name <em>tagname</em> and stores them in an array-like list </p>
+        <p>
+          <span class="emphasize">document.getElementById('id') </span>
+          retrieves the element with the
+          given <em>id</em> as an object</p>
       </div>
 
-      <h1 class='card-big'>Reading Element <br> Attributes, Node Values and Other Data</h1>
       <div class="card">
-        <p><span class="emphasize">node.getAttribute('attributeName')</span> retrieves the value of the
-          attribute
+        <p>
+          <span class="emphasize">document.getElementsByTagName('tagname') </span>
+          retrieves all elements with the tag name
+          <em> tagname</em> and stores them in an array-like list </p>
+      </div>
+
+      <h3 class='card-big'>Reading Element
+        <br> Attributes, Node Values and Other Data</h3>
+
+      <div class="card">
+        <p>
+          <span class="emphasize">node.getAttribute('attributeName') </span>
+          retrieves the value of the attribute
           with the name <em>attributeName</em></p>
       </div>
-      <div>
-        <p><span class="emphasize">node.setAttribute('attribute', 'value')</span> sets the value of the
-          attribute
-          with the name <em>attribute</em> to <em>value</em></p>
-      </div>
-      <div>
-        <p><span class="emphasize">node.nodeType</span> reads the type of the <em>node</em> (1 =
-          element, 3 =
-          text
-          node)</p>
-      </div>
-      <div>
-        <p><span class="emphasize">node.nodeName</span> reads the name of the <em>node</em> (either
-          element
-          name or
-          #textNode)</p>
-      </div>
-      <div>
-        <p><span class="emphasize">node.nodeValue</span> reads or sets the value of the <em>node</em>
-          (the
-          text
-          content in the case of text nodes)</p>
-      </div>
 
-      <!-- <br> -->
-      <h3 class="highlight card-big">Navigating Between Nodes</h3>
       <div class="card">
-        <p><span class="emphasize">node.previousSibling</span> retrieves the previous sibling node and
-          stores
-          it as
-          an object</p>
-        <p><span class="emphasize">node.nextSibling</span> retrieves the next sibling node and stores it
-          as an
-          object</p>
-        <p><span class="emphasize">node.childNodes</span> retrieves all child nodes of the object and
-          stores
-          them in
-          a list. <span class="emphasize">node.firstChild</span> & <span class="emphasize">node.lastChild</span>
+        <p>
+          <span class="emphasize">node.setAttribute('attribute', 'value') </span>
+          sets the value of the
+          attribute with the name
+          <em> attribute</em> to <em>value</em></p>
+      </div>
+
+      <div class="card">
+        <p>
+          <span class="emphasize">node.nodeType </span>
+          reads the type of the <em>node</em> (1 =
+          element, 3 = text node)</p>
+      </div>
+
+      <div class="card">
+        <p>
+          <span class="emphasize">node.nodeName </span>
+          reads the name of the <em>node</em>
+          (either element name or #textNode)</p>
+      </div>
+
+      <div class="card">
+        <p>
+          <span class="emphasize">node.nodeValue </span>
+          reads or sets the value of the <em>node</em>
+          (the text content in the case of text nodes)</p>
+      </div>
+
+      <h3 class="highlight card-big">
+        Navigating Between Nodes</h3>
+
+      <div class="card">
+        <p>
+          <span class="emphasize">node.previousSibling </span>
+          retrieves the previous sibling node and
+          stores it as an object</p>
+      </div>
+
+      <div class="card">
+        <p>
+          <span class="emphasize">node.nextSibling </span>
+          retrieves the next sibling node and stores it
+          as an object</p>
+      </div>
+
+      <div class="card">
+        <p>
+          <span class="emphasize">node.childNodes </span>
+          retrieves all child nodes of the object and
+          stores them in a list.</p>
+      </div>
+
+      <div class="card">
+        <p>
+          <span class="emphasize">node.firstChild </span>
+          & <span class="emphasize">node.lastChild</span>
           retrieve the first child node, and the last child node respectively</p>
-        <p><span class="emphasize">node.parentNode</span> retrieves the node containing <em>node</em>
+      </div>
+
+      <div class="card">
+        <p>
+          <span class="emphasize">node.parentNode </span>
+          retrieves the node containing <em>node</em>
         </p>
-        <!-- <br> -->
       </div>
-      <div class="card-big">
-        <h3 class="highlight">Creating New Nodes</h3>
-        <p><span class="emphasize">document.createElement(elementName)</span> creates a new element node
-          with
-          the
-          name <em>elementName</em></p>
-        <p><span class="emphasize">doccument.createTextNode(string)</span> creates a new text node with
-          the
-          node
-          value of <em>string</em></p>
-        <p><span class="emphasize">newNode = node.cloneNode(bool)</span> creates <em>newNode</em> as a
-          copy
-          (clone)
-          of node. If <em>bool</em> is <em>true</em>, the clone includes clones of all the child
-          nodes of
-          the
-          original</p>
-        <p><span class="emphasize">node.appendChild(newNode)</span> adds <em>newNode</em> as a new
-          (last)
-          child node
-          to node</p>
-        <p><span class="emphasize">node.insertBefore(newNode, oldNode)</span> inserts <em>newNode</em>
-          as a
-          new
-          child node of node before <em>oldNode</em></p>
-        <p><span class="emphasize">node.removeChild(oldNode)</span> removes the child <em>oldNode</em>
-          from
-          node</p>
-        <p><span class="emphasize">node.replaceChild(newNode, oldNode)</span> replaces the child node
-          <em>oldNode</em> of node with <em>newNode</em></p>
-        <p><span class="emphasize">element.innerHTML</span> reads or writes the HTML content of the
-          given
-          element as
-          a string - including all child nodes with their attributes and text content</p>
+
+      <h3 class="highlight card-big">
+        Creating New Nodes</h3>
+
+      <div class="card">
+        <p>
+          <span class="emphasize">document.createElement(elementName) </span>
+          creates a new element node
+          with the name <em>elementName</em></p>
       </div>
-      <!-- <br> -->
+
+      <div class="card">
+        <p>
+          <span class="emphasize">doccument.createTextNode(string) </span>
+          creates a new text node with
+          the node value of <em>string</em></p>
+      </div>
+
+      <div class="card">
+        <p>
+          <span class="emphasize">newNode = node.cloneNode(bool) </span>
+          creates
+          <em> newNode </em>
+          as a copy (clone) of node.
+          If <em>bool </em>
+          is
+          <em> true</em>,
+          the clone includes clones of
+          all the child nodes of
+          the original </p>
+      </div>
+
+      <div class="card">
+        <p>
+          <span class="emphasize">node.appendChild(newNode) </span>
+          adds
+          <em> newNode </em>
+          as a new (last)
+          child node to node</p>
+      </div>
+
+      <div class="card">
+        <p>
+          <span class="emphasize">node.insertBefore(newNode, oldNode) </span>
+          inserts
+          <em>newNode </em>
+          as a new child node of node before
+          <em> oldNode</em></p>
+      </div>
+
+      <div class="card">
+        <p>
+          <span class="emphasize">node.removeChild(oldNode) </span>
+          removes the child
+          <em> oldNode</em>
+          from node</p>
+      </div>
+
+      <div class="card">
+        <p>
+          <span class="emphasize">node.replaceChild(newNode, oldNode) </span>
+          replaces the child node
+          <em>oldNode </em>
+          of node with
+          <em> newNode</em></p>
+      </div>
+
+      <div class="card">
+        <p>
+          <span class="emphasize">element.innerHTML </span>
+          reads or writes the HTML content of
+          the given element as a string
+          - including all child nodes
+          with their attributes and text content</p>
+      </div>
+
     </div>
-
-    <!-- <h3 class="highlight">Known browser quirks</h3> -->
-
   </div>
-
 </body>
 
 <style>
