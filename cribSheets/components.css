@@ -1,0 +1,80 @@
+/*//////////
+the GRID
+*/
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/*//////////
+TAGS
+*/
+
+h1 {
+  grid-column: 1 / -1;
+
+  margin: 50px auto 25px auto;
+  width: fit-content;
+
+  font-size: 30px;
+  letter-spacing: 5px;
+  border-bottom: 2px solid var(--color3);
+}
+
+.nav-btns {
+  grid-column: 8 / -1;
+  grid-row: 1 / 1;
+}
+
+.btn {
+  background-color: var(--color2);
+  padding: 15px 35px;
+  color: var(--color3);
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px var(--color3);
+  font-size: 20px;
+  text-align: center;
+}
+
+.btn:hover {
+  /* transform: scale(1.02); */
+  transform: translateY(-3px);
+  transition: 0.25s;
+  box-shadow: 3px 6px 30px var(--color3);
+}
+
+.low-btn {
+  text-decoration: none;
+  padding: 5px 25px;
+  border-radius: 5px;
+  color: var(--color2);
+}
+
+.low-btn:hover {
+  color: var(--color3);
+  background-color: var(--color2);
+  opacity: 84%;
+
+  box-shadow: 32px 23px 150px var(--color3);
+}
+
+/* CAPSULE */
+
+.elinx {
+  color: snow;
+}
+
+.highlight,
+tr:nth-child(even) {
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  padding: 15px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.emphasize {
+  color: var(--wesBos);
+  padding: 10px;
+  /* display: block; */
+}

@@ -1,40 +1,6 @@
-/* 
-.page {
-      background-color: rgba(255, 255, 255, 0.05);
-      margin: auto;
-      width: 80vw;
-      padding: 50px;
-      margin-top: 50px;
-      border-radius: 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-content: center;
-}
-
-      .page h1 {
-            border-top: 5px solid rgba(255, 255, 255, 0.05);
-            text-decoration: underline;
-      }
-
-.method {
-      background-color: rgba(255, 255, 255, 0.05);
-      padding: 10px;
-      border-radius: 10px;
-      
-      box-shadow: 1px 1px 5px wheat;
-} */
-
 .main {
-  grid-column: 1 / -1;
-  grid-row: 4 / auto;
-
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;
-  gap: 50px;
-  max-width: 90vw;
-  padding: 50px;
+  grid-column: 3 / 11;
+  gap: 25px;
 }
 
 h2 {
@@ -45,7 +11,7 @@ h2 {
 }
 
 .card {
-  grid-column: auto / span 6;
+  grid-column: auto / span 4;
   grid-row: auto / span 2;
 
   background-color: var(--color2);

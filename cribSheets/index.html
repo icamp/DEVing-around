@@ -6,18 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="new_style.css">
-  <title>dev notes</title>
+  <link rel="stylesheet" href="components.css">
+  <title>synopsis</title>
 </head>
 
 <body>
-  <div class="container">
+  <div class="container grid">
 
-    <header class="header">
+    <header class="header grid">
       <h1>synopsis</h1>
     </header>
 
-    <main class="main">
+    <main class="main grid">
       <a href="javascript/index.html" class="btn js">Javascript</a>
       <a href="git/index.html" class="btn git">git</a>
       <a href="dom/index.html" class="btn dom">DOM</a>
@@ -26,5 +26,31 @@
 
   </div>
 </body>
+
+<style>
+  .js {
+    grid-column: 1 / 6;
+    grid-row: 1;
+
+    margin-bottom: 75px;
+  }
+
+  .git {
+    grid-column: 8 / -1;
+    grid-row: 1;
+
+    margin-bottom: 75px;
+  }
+
+  .dom {
+    grid-column: 1 / 6;
+    grid-row: 2;
+  }
+
+  .terminal {
+    grid-column: 8 / -1;
+    grid-row: 2;
+  }
+</style>
 
 </html>
