@@ -1,1 +1,6 @@
-- lower H1's
+
+
+JS:
+-  H1 to H2
+- card-big to card_title
+- 1 / -1 els to card_wide
