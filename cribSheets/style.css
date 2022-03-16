@@ -56,6 +56,7 @@ body {
 .header {
   grid-column: 1 / -1;
   grid-row: 1;
+  padding-top: 50px;
 }
 
 .main {
