@@ -5,32 +5,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="../javascript/style.css">
+  <!-- <link rel="stylesheet" href="../javascript/style.css"> -->
+  <link rel="stylesheet" href="../components.css">
   <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../header.css">
 
   <title>synopsis | git</title>
 </head>
 
 <body>
-  <div class="container">
+  <div class="container grid">
 
-    <header class="header">
+    <header class="header grid">
       <div class="nav-btns">
-        <a href="../index.html">Home</a>
+        <a class="low-btn" href="git_cheatsheet.pdf">Cheatsheet by Atlassian</a>
+        <a class="low-btn" href="http://https://git-scm.com/downloads">get git</a>
+        <a class="home low-btn" href="../index.html">Home</a>
       </div>
       <h1>.git</h1>
     </header>
 
     <div class="main">
-
-      <h2 class="card-big"> <a href="git_cheatsheet.pdf">Cheatsheet by Atlassian</a> </h2>
-
-      <h4 class="card-big">A quick guide to using git & github</h4>
-
-      <div class="card">
-        <h4>install Git</h4>
-        <a class="elinx" href="http://https://git-scm.com/downloads">get git</a>
-      </div>
 
       <div class="card">
         <h4> user configuration (run commands in Git Bash):</h4>
@@ -222,5 +217,16 @@
     </div>
   </div>
 </body>
+
+<style>
+  .main {
+    grid-column: 3 / 11;
+    background-color: var(--color2);
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+</style>
 
 </html>
