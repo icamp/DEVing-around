@@ -24,8 +24,9 @@ h1 {
 }
 
 .nav-btns {
-  grid-column: 8 / -1;
+  grid-column: 2 / 12;
   grid-row: 1 / 1;
+  margin-left: auto;
 }
 
 .btn {
