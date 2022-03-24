@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="../javascript/style.css">
+  <!-- <link rel="stylesheet" href="../javascript/style.css"> -->
+  <link rel="stylesheet" href="../components.css">
+  <link rel="stylesheet" href="../header.css">
   <link rel="stylesheet" href="../style.css">
 
   <title>synopsis | DOM</title>
@@ -13,17 +15,16 @@
 
 <body>
 
-  <div class="container">
+  <div class="container grid">
 
-    <div class="header">
+    <header class="header grid">
       <div class="nav-btns">
         <a class="home low-btn" href="../index.html">Home</a>
       </div>
       <h1>DOM</h1>
-    </div>
+    </header>
 
-    <div class="main">
-
+    <div class="main grid">
       <h3 class='card-big'>Reaching Elements in a Document</h3>
 
       <div class="card">
@@ -194,15 +195,21 @@
 
     </div>
   </div>
+
 </body>
 
 <style>
-  /* .content h3 {
-            padding: 10px 100px 10px 20px;
-            border-radius: 10px;
-            width: fit-content;
-            margin-top: 30px;
-      } */
+  .main {
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+  }
+
+  .card {
+    margin-top: 20px;
+  }
+
+  .card-big {
+    margin-top: 40px;
+  }
 </style>
 
 </html>

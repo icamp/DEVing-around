@@ -22,16 +22,6 @@ h2:not(:first-of-type) {
   margin-top: 50px;
 }
 
-.card {
-  background-color: var(--color2);
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.card-big {
-  grid-column: 1 / -1;
-}
-
 .footer {
   grid-column: 1 / -1;
   grid-row: 3;

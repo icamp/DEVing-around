@@ -81,3 +81,13 @@ tr:nth-child(even) {
   padding: 10px;
   /* display: block; */
 }
+
+.card {
+  background-color: var(--color2);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card-big {
+  grid-column: 1 / -1;
+}
